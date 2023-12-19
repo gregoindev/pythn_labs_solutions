@@ -268,4 +268,4 @@ inputValue = int(input())
 
 pigAgeConverted = pigAge.pigAge_converter(inputValue)
 
-print(f'{inputValue} is equivalent to {pigAgeConverted}')
+print(f'{inputValue} is {pigAgeConverted} in human years')
