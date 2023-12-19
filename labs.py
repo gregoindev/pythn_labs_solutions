@@ -222,25 +222,50 @@ print(f'{groceryItem} ${groceryCost:.2f}')
 file_name = input()
 
 
-with open(file_name, 'r') as file:
-    word1 = file.readline().strip()
-    word2 = file.readline().strip()
-    word3 = file.readline().strip()
+file = open(file_name, 'r')
+word1 = file.readline().strip()
+word2 = file.readline().strip()
+word3 = file.readline().strip()
 
 sentence = f"{word1} {word2} {word3}"
 
-with open(file_name, 'a') as file:
-    file.write('\n' + sentence)
+file = open(file_name, 'a')
+file.write('\n' + sentence)
 
-with open(file_name, 'r') as file:
-    updated_contents = file.read()
+file = open(file_name, 'r')
+updated_contents = file.read()
 
 print(updated_contents)
 
 
 # =======================================
+------------------- CSV MANIPULATION ------------------
+# =======================================
+#import math module and call factorial()
+#solution accepts integer input
+#solution outputs the factorial of the integer input
+#solution outputs Boolean identification of whether the factorial is >100
+
+import math
+
+input_value = int(input())
+factorial = math.factorial(input_value)
+
+isGreaterThan100 = factorial > 100
+
+print(factorial)
+print(isGreaterThan100)
 
 # =======================================
+#import pigAge module and call pigAge_converter()
+#one pig year is equivalent to five human years
+#solution accepts integer input representing a pig's age
+#solution outputs the human equivalent age for a pig (i.e. "8 is 40 in human years")
 
+import pigAge
 
-# =======================================
+inputValue = int(input())
+
+pigAgeConverted = pigAge.pigAge_converter(inputValue)
+
+print(f'{inputValue} is equivalent to {pigAgeConverted}')
