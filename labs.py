@@ -5,20 +5,20 @@
 #solution outputs "Distance: " followed by the total value to two decimal places
 
 
-# timesTraveledOne = int(input())
-# timesTraveledTwo = int(input())
-# timesTraveledThree = int(input())
-#
-# milesTraveledA = 15.62
-# milesTraveledB = 41.85
-# milesTraveledC = 32.67
-#
-# totalMilesA = timesTraveledOne * milesTraveledA
-# totalMilesB = timesTraveledTwo * milesTraveledB
-# totalMilesC = timesTraveledThree * milesTraveledC
-#
-# totalMilesTraveled = totalMilesA + totalMilesB + totalMilesC
-# print(f'Distance: {totalMilesTraveled:.2f} miles')
+timesTraveledOne = int(input())
+timesTraveledTwo = int(input())
+timesTraveledThree = int(input())
+
+milesTraveledA = 15.62
+milesTraveledB = 41.85
+milesTraveledC = 32.67
+
+totalMilesA = timesTraveledOne * milesTraveledA
+totalMilesB = timesTraveledTwo * milesTraveledB
+totalMilesC = timesTraveledThree * milesTraveledC
+
+totalMilesTraveled = totalMilesA + totalMilesB + totalMilesC
+print(f'Distance: {totalMilesTraveled:.2f} miles')
 
 
 # =======================================
@@ -27,35 +27,35 @@
 #solution accepts an integer value representing any number of ounces
 #solution outputs the converted tons, pounds, and ounces represented by the input value of ounces
 #
-# ounces = int(input())
-#
-# tons = ounces // (2000 * 16)
-# ounces %= (2000 * 16)
-#
-# pounds = ounces // 16
-# ounces %= 16
-#
-# print(f'Tons: {tons}')
-# print(f'Pounds: {pounds}')
-# print(f'Ounces: {ounces}')
+ounces = int(input())
+
+tons = ounces // (2000 * 16)
+ounces %= (2000 * 16)
+
+pounds = ounces // 16
+ounces %= 16
+
+print(f'Tons: {tons}')
+print(f'Pounds: {pounds}')
+print(f'Ounces: {ounces}')
 
 
 # =======================================
 
 
 
-# various_data_types = [516, 112.49, True, "meow", ("Western", "Governors", "University"), {"apple": 1, "pear": 5}]
-#
+various_data_types = [516, 112.49, True, "meow", ("Western", "Governors", "University"), {"apple": 1, "pear": 5}]
+
 # #use built-in function type()
 # #get name by using the built-in attribute __name__
 # #solution accepts integer input representing list element index
 # #solution outputs data type of list element based on input index value
-#
-# index_value = int(input())
-#
-# data_type = type(various_data_types[index_value]).__name__
-#
-# print(f'Element {index_value}: {data_type}')
+
+index_value = int(input())
+
+data_type = type(various_data_types[index_value]).__name__
+
+print(f'Element {index_value}: {data_type}')
 
 # =======================================
 #solution accepts three integer values representing base and height measurements of a trapezoid
